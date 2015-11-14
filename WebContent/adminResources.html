@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Biblioteca</title>
+</head>
+<body>
+
+	<h1>Bem vindo, adminstrador!</h1>
+
+	<h2>Cadastro de volumes</h2>
+
+	<form action="cadastroVolumes" method="post">
+		<label>Titulo: <input type='text' name='titulo'></label>
+		<label>Autor: <input type='text' name='autor'></label>
+		<label>Breve Descrição: <input type='text' name='descricao'></label>
+		<label>Tipo: <select name='tipo'>
+			<option value='1'>Livro</option>
+			<option value='2'>Periódico</option>
+			<option value='3'>Fotografia</option>
+			<option value='4'>Audio</option>
+			</select></label>
+		<label>Nº de páginas: <input type='text' name='paginas'></label>
+		<label>Ano de publicação: <input type='text' name='ano'></label>
+		<label>Editora: <input type='text' name='editora'></label>
+		<input type='submit' name='Enviar'>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Biblioteca</title>
+</head>
+<body>
+	<h1>FAÇA SEU CADASTRO</h1>
+
+	<form action='cadastroServlet' method='post'>
+
+		<label>Nome: <input type='text' name='name'></label> 
+		<label>Senha: <input type='password' name='senha'></label>
+		<label>Data	de Nascimento: <input type='date' name='data'></label> 
+		<label>Sexo: <select name ='genero'>
+				<option value='1'>Feminino</option>
+				<option value='2'>Masculino</option>
+		</select></label> 
+		<label>CPF <input type='text' name='cpf'></label>
+		<label><input type='submit' value='Enviar'></label>
+	</form>
+
+</body>
+</html>
