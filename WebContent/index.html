@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css"  href="estilo_index.css" />
 <title>Biblioteca</title>
 </head>
 <body>
 
 <!-- Consulta de volumes ao BD -->
 
-<h1>Faça sua consulta</h1>
-
-<form action="consultaServlet" method="get">
-		<label>Titulo:<input type="text" name="titulo"></label> 
-		</label> <input type="submit" value="Pesquisar">
-	</form>
 	
 <!-- Login para acesso a área de retirada e devolução -->	
 
-	<h2>Para retirada e devolução, faça seu login</h2>
+	<div class='container'>
+		<h2>Faça sua consulta</h2>
+		<form action="consultaServlet" method="get" role="form">
+			<div class="form-group">
+				<label>Titulo<input type="text" name="titulo"></label>
+			</div>
+			<div class="form-group">
+				<label> <input type="submit" class="btn btn-primary" value="Pesquisar"></label>
+			</div>
+		</form>
+	</div>
+	<!-- Login para acesso a área de retirada e devolução -->
+	<div class="container">
+		<h2>Para retirada e devolução, faça seu login</h2>
 
-	<form action="loginServlet" method="post">
-		<label>Usuário: <input type="text" name="user"></label> <label>Senha:<input
-			type="password" name="senha"></label> <input type="submit"
-			value="Enviar">
-	</form>
-	
-<!-- Botão que redireciona para fazer cadastro -->
+		<form action="loginServlet" method="post" role="form">
+			<div class="form-group">
+				<label>Nome <input type="text" name="nome"></label>
+			</div>
+			<div class="form-group">
+				<label>Senha<input type="password" name="senha"></label>
+			</div>
+			<input type="submit" class="btn btn-primary" value="Enviar">
+		</form>
+	</div>
+	<!-- Botão que redireciona para fazer cadastro -->
 
+<div class='container'>
 	<h2>Ainda não é cadastrado?</h2>
 
-	<form action="cadastroServlet" method="get">
-	<input name="" type="button"  onclick="location.href='cadastroUsuario.html' "
+	<form action="cadastroServlet" method="get" role='form'>
+		<input name="" type="button" class="btn btn-success"
+			onclick="location.href='cadastroUsuario.html' "
 			value="Faça seu cadastro">
 	</form>
-
+</div>
 </body>
 </html>

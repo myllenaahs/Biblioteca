@@ -1,0 +1,42 @@
+@CHARSET "ISO-8859-1";
+
+body{
+    background-color: #650a0c;
+}
+
+h1{
+	font-family:Broadway;
+	text-align:center;
+	color:white;
+}
+
+h2{
+	text-align:left;
+	color:white;
+	margin-left:100px;
+}
+
+form{
+	color:white;
+	text-align:left;
+	margin-left:100px;
+}
+
+input{
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+    color:black;
+}
+ 
+ input:focus, .campo select:focus, .campo textarea:focus {
+    background: #FFC;
+}
+
+#logout{	
+ 	position:relative;
+ 	 top: 200px;
+    float:right;
+    margin:50px;
+}

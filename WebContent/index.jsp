@@ -7,9 +7,11 @@
 <title>Biblioteca</title>
 </head>
 <body>
-
-<h1>Retirada</h1>
-<h1>Devolução</h1>
+	
+	<%= session.getAttribute("erro") %>
+	<input id='botao' name="" type="button" class="btn btn-success"
+			onclick="location.href='index.html' "
+			value="Voltar">
 
 
 </body>
