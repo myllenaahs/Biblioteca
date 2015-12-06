@@ -7,7 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import dao.BancoDados;
 
@@ -69,8 +72,8 @@ public class loginServlet extends HttpServlet {
 	            //setting cookie to expiry in 30 mins
 	            loginCookie.setMaxAge(30*60);
 	            response.addCookie(loginCookie);*/
-				HttpSession session = request.getSession();
-				session.setAttribute("nome", nome);
+				HttpSession session2 = request.getSession();
+				session2.setAttribute("nome", nome);
 				RequestDispatcher dispatcher = request.getRequestDispatcher("boasVindas.jsp");
 				dispatcher.forward(request, response);
 			} else if (aux == 0) {
